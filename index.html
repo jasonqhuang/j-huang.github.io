@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Jonathan Benton</title>
+        <title>Jason Q Huang</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"
-                ><span class="d-block d-lg-none">Jonathan Benton</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me.JPG" alt="" /></span></a
+                ><span class="d-block d-lg-none">Jason Q Huang</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me.jpg" alt="" /></span></a
             ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -37,11 +37,11 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">Jonathan <span class="text-primary">Benton</span></h1>
-                    <div class="subheading mb-5">Atlanta, GA · <a href="mailto:jonathanmbenton@gmail.com">jonathanmbenton@gmail.com</a></div>
-                    <p class="lead mb-5">I am a detail-oriented creative who uses the tools of data science to provide business insights. Given my background as a cruise ship performer, I use my communication skills and adaptability to quickly assimilate to new systems and deliver clear, concise recommendations.</p>
+                    <h1 class="mb-0">Jason Q <span class="text-primary">Huang</span></h1>
+                    <div class="subheading mb-5"> Boston, MA · (917) 538-8568 · <a href="mailto:jasonian729@gmail.com">jasonian729@gmail.com</a></div>
+                    <p class="lead mb-5">Motivated data analyst with experience in developing and delivering products from concept to manufacturing. Seeking a role in a fast-paced environment that encourages learning through experimentation, where I can leverage analytical background to support business/product strategy through data-driven insights. </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/j-benton/"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/j-benton"><i class="fab fa-github"></i></a><a class="social-icon" href="https://medium.com/@jonathanmbenton/"><i class="fab fa-medium"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/jason-q-huang/"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/jasonqhuang"><i class="fab fa-github"></i></a><a class="social-icon" href="https://medium.com/@jasonian729"><i class="fab fa-medium"></i></a>
                     </div>
                 </div>
             </section>
@@ -50,64 +50,44 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <div class="subheading mb-5">All project source code can be found on my personal GitHub link above</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Worship Setlist Generator</h3>
-                            <div class="subheading mb-3">Capstone Project for General Assembly Data Science Immersive</div>
-                            <p>For this project, I created a locally hosted Flask application that recommended songs for church services based on user input. I used:
+                            <h3 class="mb-0"> Car Color Identifier Neural Network </h3>
+                            <div class="subheading mb-3"> Python, Pandas, Numpy, Convolutional Neural Network, Keras, Tensorflow </div>
+                            <p>This project was my capstone for General Assembly Data Science Immersive. The capstone was a Convolutional Neural Network that can predict the color of a car given any image of one. The majority of the code is broken up into three parts:
                             <ul>
-                              <li>Python</li>
-                              <li>Requests</li>
-                              <li>BeautifulSoup4</li>
-                              <li>CountVectorizer</li>
-                              <li>spaCy</li>
-                              <li>VaderSentiment</li>
-                              <li>Flask</li>
-                              <li>HTML</li>
-                              <li>CSS</li>
+                              <li>Identifying the color of the car in a photo and retrieving the RGB values.</li>
+                              <li>Classifying images via RGB color for model training.
+                              <li>Training and validating the Convolutional Neural Network (CNN) using Tensorflow w/ Keras.</li>
                             </ul>
-                            All code was written in Python, except for the portion of my Flask app that used HTML and CSS. Using Requests and BeautifulSoup4, I wrote code that scraped praisecharts.com and biblestudytools.com for song metadata/lyrics and biblical text, respectively. I then used the spaCy NLP library to tokenize, lemmatize, and vectorize all text data. Finally, I defined a function that took in four types of user input: Bible verses (e.g. "John 3:16"), sermon themes/keywords (e.g. "forgiveness"), set length (e.g. "5" songs), and the ratio of upbeat/slower songs. My function returned a setlist to user specifications with the songs containing lyrics most similar to the given Bible verses and sermon themes/keywords. <br><br>This project was inspired by my experience as a hired drummer for various churches and seeing the constant need for a way to efficiently construct worship setlists that supported and enhanced a given service's message.
-                              </p>
+                            All the code was written in python. The  CNN model architecture was adapted from previous work by Reza Fuad Tachmadi and I Ketut Eddy Purnama in their paper <a href="https://arxiv.org/pdf/1510.07391.pdf">Vehicle Color Recognition using Convolutional Neural Network</a>.
+
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">COVID-19 Twitter Sentiment Analysis</h3>
-                            <div class="subheading mb-3">Client/Group Project for General Assembly Data Science Immersive</div>
-                            <p>For this group project, my team analyzed the sentiments of tweets from across the U.S. to see if states' differing responses to COVID-19 affected Twitter users' attitudes. We used:
-                              <ul>
-                                <li>Python</li>
-                                <li>GetOldTweets3</li>
-                                <li>spaCy</li>
-                                <li>CountVectorizer</li>
-                                <li>VaderSentiment</li>
-                                <li>Matplotlib</li>
-                              </ul>
-                            We worked with GetOldTweets3 to get tweets from key cities in states with the most severe and least severe lockdown measures during most of April 2020. As a control, we also pulled tweets from the same cities and dates from 2019. We ended up with more than 700,000 tweets from twenty cities. We then used spaCy to process the text data and VaderSentiment for sentiment analyziz. Finally, we plotted the sentiments to identify trends and connections. However, tweet sentiments didn't seem to be affected by differences in statewide policies responding to COVID-19, nor did sentiments change much between 2019 and 2020.</p>
+                            <h3 class="mb-0">Cleanup Script Project</h3>
+                            <div class="subheading mb-3">Python, Pandas, Numpy, Scripting</div>
+                            <p>Quick project to develop a script to manage data output in a dataframe. The concept for this project came from a real world task to combine similar posts while retaining unique names which would normally take a days worth of manual work. The end goal was to develop a script that would automate the task and complete it via only CMD line interaction.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">The West Wing vs. House of Cards</h3>
-                            <div class="subheading mb-3">NLP Project for General Assembly Data Science Immersive</div>
-                            <p>For this project, I used NLP and Reddit's Pushshift API to predict subreddit origin for posts from two subreddits: The West Wing and House of Cards. I used:
-                              <ul>
-                                <li>Python</li>
-                                <li>Requests</li>
-                                <li>BeautifulSoup4</li>
-                                <li>NLTK</li>
-                                <li>GridsearchCV</li>
-                                <li>Pipeline</li>
-                                <li>CountVectorizer</li>
-                                <li>TfidfVectorizer</li>
-                                <li>Logistic Regression</li>
-                                <li>Multinomial Naive Bayes</li>
-                              </ul>
-                              First I gathered 4000 posts from each subreddit, pulling 2000 both before and after Trump's election in 2016 for extra analysis (I wanted to predict not only which subreddit a post came from but also whether it was posted pre- or post-Trump). I then processed the data using the NLTK data, including tokenization, lemmatization, and removing stopwords. I then used both CountVectorizer and TfidfVectorizer with Logistic Regression, KNN, Multinomial Naive Bayes, and Binomial Naive Bayes models to see which performed most accurately. Logistic Regression (w/TfidfVec) and Multinomial NB (w/CountVec) were chosen.<br><br>
-
-                              I then trained and tested my two models on my processed text data and found that they predicted a post's subreddit origin with fairly high accuracy (~80%). However, I had intentionally left in dead-giveaway words like the actors'/characters' names. After removing those, accuracy dropped down to about 65% (average between the two), which was still above the baseline of 50%. My Trump analysis was unfruitful, with my models performing as well as the baseline.
+                            <h3 class="mb-0">PyDisaster</h3>
+                            <div class="subheading mb-3">Python, Pandas, Flask, Google Maps API, PIL, Geolocation, HTML</div>
+                            <p>PyDisaster was developed as a locally hosted app that would input disaster photos and compile a database of geolocations during early stage disatster relief efforts. PyDisaster can retrieve geolocations (latitude and longitude) via EXIF data from both Iphone and Android phone photos and plot it using Google Map's API. The app was locally hosted via Flask and is relatively low resource intensive which is critical during disaster time.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bourbon vs. Scotch Reddit Webscraping</h3>
+                            <div class="subheading mb-3">Python, Pandas, Numpy, Webscraping, Naive Bayes, Confusion Matrix, NLP</div>
+                            <p>For this project, I utilized Natrual Language Processing (NLP) and Reddit's Pushshift API to webscrape posts off of Reddit.com's Bourbon and Scotch subreddits. The goal of the project was to build a model to determine if any given subreddit post was either from the Bourbon subreddit or the Scotch subreddit based on the spelling of whisky/whiskey. </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2020</span></div>
                     </div>
@@ -130,7 +110,12 @@
                             <span class="fa-li"><i class="fas fa-check"></i></span>Python
                         </li>
                         <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>SQL
+                        </li>
+                        <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>Pandas
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Numpy
                         </li><li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>Matplotlib
                         </li><li>
@@ -140,37 +125,36 @@
                         </li><li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>TensorFlow w/Keras
                         </li><li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>spaCy
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Flask
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>Have used: Spark, Scala, AWS, SQL, R, HTML, CSS
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Have used: Spark, Scala, AWS, R, HTML, CSS, Tableau
                         </li>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Education-->
+            <!--Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Data Science Fellow</h3>
+                            <h3 class="mb-0">Data Scientist</h3>
                             <div class="subheading mb-3">General Assembly Data Science Immersive</div>
-                            <p>Completed 12-week, 720-hour Data Science immersive bootcamp, including 20 labs and 6 projects. I won our internal Kaggle competition predicting housing prices in Ames, IA, and my team won an in-class hackathon predicting income based on a person's profile info. <br><br>
-                            Other project included tracking tweet sentiments during the 2020 pandemic, predicting Reddit posts' subreddit origin, and my capstone project, for which I used NLP to create a worship setlist generator (i.e. recommendation system). <br><br> Skills learned include Python, Pandas, Jupyter Notebook, Machine Learning, Natural Language Processing, Scikit Learn, Neural Networks with Keras, Un / Supervised Learning, Web Scraping, SQL, Spark, Scala, AWS, and data visualization (Matplotlib and Seaborn).
- </p>
+                            <p>12 week (480 hours) intensive program focused on real-world applications of data science principles and best practices including, data acquisition, data cleaning and wrangling, predictive modeling, and visualization strategies. <br><br> Skills learned include Python, Numpy, Pandas, Jupyter Notebook, Machine Learning, Natural Language Processing, Scikit Learn, Neural Networks with Keras, Supervised and Unsupervised Learning, Web Scraping, SQL, Spark, Scala, AWS, and data visualization (Matplotlib and Seaborn).
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">April 2020 - July 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Southern New Hampshire University</h3>
-                            <div class="subheading mb-3">Bachelor of Arts</div>
-                            <div>Political Science</div>
-                            <p>GPA: 4.0</p>
+                            <h3 class="mb-0">Northeastern University</h3>
+                            <div class="subheading mb-3">Bachelor of Science - Mechanical Engineering</div>
+
+
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Graduated 2017</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Class of 2016</span></div>
                     </div>
             </section>
             <hr class="m-0" />
@@ -181,59 +165,57 @@
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Assistant Cruise Director/Entertainer</h3>
-                            <div class="subheading mb-3">American Queen Steamboat Company</div>
+                            <h3 class="mb-0">Customer Project Engineer</h3>
+                            <div class="subheading mb-3">Baker Hughes Panametrics (Formally BHGE)</div>
                             <p>
                               <ul>
-                              <li>Toured the St. Lawrence River, Lake Ontario, Lake Erie, Nova Scotia, and U.S. northeast</li>
-                              <li>Assisted Cruise Director with all aspects of guest satisfaction</li>
-                              <li>Performed daily musical sets, both solo and ensemble</li>
-                              <li>Delivered 30-min ports-of-call presentations and hosted activities</li>
+                              <li>Worked independently with minimal oversight supporting a global team and reporting to Ireland based manager.</li>
+                              <li>Developed solutions to technical and commercial problems to serve both internal and external customers.</li>
+                              <li>Managed development to delivery for 6-7 concurrent projects at varying stages of product life cycle.</li>
+                              <li>Organized personal database of key project details for ease of reference for future projects.</li>
                             </ul></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - October 2019</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2018 - November 2019</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Proofreader</h3>
-                            <div class="subheading mb-3">REAL Marketing</div>
+                            <h3 class="mb-0">Component Design Engineer</h3>
+                            <div class="subheading mb-3">General Dynamics Electric Boat</div>
                             <p><ul>
-                              <li>Proofread real estate marketing materials for grammar, data formatting, and design
-</li>
-                              <li>Edited content for special projects and company presentation</li>
+                              <li>Translated technical specifications from the US Navy into product requirements in order to source and procure bids for outsourced design and engineering services.</li>
+                              <li>Managed conceptual design through manufacturing for critical parts on submarine with highly sensitive requirements in underwater/high pressure environment with life safety implications.</li>
+                              <li>Acted as point person / central source of truth for the component/product/project - sole responsibility for outcome.</li>
                             </ul></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - March 2019</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2016 - February 2018</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">District Intern</h3>
-                            <div class="subheading mb-3">Congressman Jim Costa (CA-16)</div>
+                            <h3 class="mb-0">Brewer Engineering Co-op</h3>
+                            <div class="subheading mb-3">Keurig Dr. Pepper (Formally Keurig)</div>
                             <p>
                               <ul>
-                                <li>Wrote and edited congressional records honoring community members
-</li>
-                                <li>Researched legislation and wrote policy memos for district office
-</li>
-                                <li>Answered phones, greeted constituents, and served as staff support at local events
-</li>
+                                <li>Designed prototype testing stand and plan for NPI via iterative prototyping and SolidWorks.</li>
+                                <li>Performed RCA to determine the sources of failure for both new and sustaining products.</li>
+                                <li>Conducted competitive analysis to reverse engineer a competitor's product and understand the competition in the market.</li>
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - November 2017</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2015 - December 2015</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Bartender/Manager-on-Duty</h3>
-                            <div class="subheading mb-3">Gustavo's</div>
-                            <p><ul>
-                              <li>Established rapport with customers and addressed all customer issues during shift
-</li>
-                              <li>Supervised shifts of up to a dozen servers/hostesses
-</li>
-                            </ul></p>
+                            <h3 class="mb-0">Mechanical Engineering / Operations Co-op</h3>
+                            <div class="subheading mb-3">Johnson & Johnson DePuy Synthes</div>
+                            <p>
+                              <ul>
+                                <li>Recorded daily production metrics on KPIs (rework, downtime, productivity, etc.) and analyzed datasets in Microsoft Access databases to support strategic business decisions.</li>
+                                <li>Performed deep dive analysis of a process flow as part of a continuous improvement project and eliminated process waste saving ~$100k in decreased cycle time and operator labor.</li>
+                                <li>Designed and implemented solutions for Kaizen projects from floor operators for quick and efficient workspace enhancements.</li>
+                              </ul>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2014 - March 2017</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2014 - March 2015</span></div>
                     </div>
                 </div>
             </section>
@@ -242,8 +224,7 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>I have been a musician for almost my entire life, and I still like to gig with friends on the weekends. When outdoors, I love hiking, kayaking, playing basketball, or even just walking around town. When indoors, I am addicted to chess (find me on lichess: "jbentonio") and I love reading old Russian literature and watching movies.</p>
-
+                    <p>I am a career changer and a dream pursuer. On my free time I like to work on cars and bake sourdough bread. I belive in nuance and attention to detail but most importantly getting the job done. I play video games and hang out with my cat and will on occassion drink Scotch. </p>
                 </div>
             </section>
             <hr class="m-0" />
